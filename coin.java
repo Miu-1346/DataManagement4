@@ -1,5 +1,6 @@
 import jeliot.io.*;
 import java.io.PrintStream;
+import java.util.Scanner;
 
 public class coin {
     public static void main() {
@@ -7,6 +8,13 @@ public class coin {
        int heads =0;
        int tails =0;
        
+       //neme
+       System.out.println("What your name?");
+       Scanner scan = new Scanner(System.in);
+       String name = scan.next();
+       System.out.println("Hello!"+name);
+       
+       //coin
        for(; round<4;){
        double coin = Math.floor(Math.random()*2)+1;
        
